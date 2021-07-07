@@ -108,6 +108,7 @@ h1 {
     right: 0;
     top: 0;
     transform: translateY(-99%);
+    z-index: -1;
 }
 
 #graf01 {
@@ -124,6 +125,22 @@ h1 {
     transform: rotate(35deg);
     width: 10rem;
     animation: rotate 90s linear infinite;
+} #graf03 {
+    position: absolute;
+    top: 0%;
+    width: 20%;
+    right: 1%;
+    z-index: -1;
+    animation: rotate 60s linear infinite;
+    opacity: 0.6;
+} #graf04 {
+    position: absolute;
+    top: 26%;
+    width: 38%;
+    left: -6%;
+    z-index: -1;
+    animation: rotate 60s linear infinite reverse;
+    opacity: 0.4;
 }
 
 @keyframes rotate {
@@ -164,7 +181,7 @@ h1 {
     margin: 0 auto;
     text-align: center;
     display: block;
-    background: var(--c05);
+    background: rgb(129 234 254 / 20%);
     color: var(--c01);
     line-height: 1.4rem;
     padding: 0.7rem 1rem;
@@ -177,14 +194,4 @@ h1 {
     letter-spacing: 1px;
 } #comece_a_usar {
     color:var(--c07);
-} #graf03 {
-    position: absolute;
-    bottom: -50%;
-    width: 100%;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    z-index: -1;
-    animation: rotate 180s linear infinite alternate;
-    opacity: 0.2;
 }
