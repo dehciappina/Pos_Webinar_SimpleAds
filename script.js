@@ -1,9 +1,13 @@
-const fixedCtnr = document.querySelector('#fixed_ctnr')
+const fixedCtnr = document.querySelector('#video_ctnr')
 
-document.body.onscroll = function() {
-    if(window.pageYOffset > 50) {
-        fixedCtnr.style.transform = "translate(0)"
-    } else {
-        fixedCtnr.style.transform = "translateY(100%)"
+if(!window.matchMedia('(min-width:720px)').matches) {
+    document.body.onscroll = function() {
+        if(window.pageYOffset > 25) {
+            fixedCtnr.style.transform = "translate(0)"
+        } else {
+            fixedCtnr.style.transform = "translateY(100%)"
+        }
     }
+} else {
+    
 }
