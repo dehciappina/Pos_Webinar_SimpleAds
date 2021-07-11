@@ -348,15 +348,15 @@ h1 {
 
 
 @media (min-width:1280px) {
+    
+    html {
+        font-size: clamp(12px, 50vw, 1.9vh);
+    }
 
     body {
         background-image: linear-gradient(40deg, #2c066a, #55b4e4);
         height:100vh;
         overflow: hidden;
-    }
-    
-    html {
-        font-size: 14px;
     }
 
     header {
