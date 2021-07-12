@@ -107,15 +107,6 @@ h1 {
     font-size: 1.4rem;
 }
 
-.wave {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    transform: translateY(-99%);
-    z-index: -1;
-}
-
 #graf01 {
     position: absolute;
     left: -8rem;
@@ -170,13 +161,12 @@ h1 {
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 0 2rem 1rem;
-    background: linear-gradient(var(--c06), #049);
+    padding: 5vw;
+    background: var(--c01);
     z-index: 2;
     transform: translateY(100%);
     transition: transform 0.5s ease;
 } #video_ctnr iframe {
-    margin: 1rem auto 0.8rem;
     width: 100%;
     max-width: 50rem;
     height: 12rem;
@@ -189,13 +179,13 @@ h1 {
     margin: 0 auto;
     text-align: center;
     display: block;
-    background: rgb(129 234 254 / 20%);
+    background: var(--c05);
     color: var(--c01);
     line-height: 1.4rem;
     padding: 0.7rem 1rem;
     box-sizing: border-box;
     font-size: 1rem;
-    margin-bottom: 0.8rem;
+    margin-top: 0.8rem;
     border-radius: 0.3rem;
     text-transform: uppercase;
     font-weight: 900;
@@ -271,6 +261,7 @@ h1 {
     }
 
     #video_ctnr {
+        background-color: var(--c06);
         transform: translateY(0%);
         transition: none;
         padding: 1rem;
@@ -315,6 +306,10 @@ h1 {
     #cta_ctnr {
         width: 50%;
         margin-right: 4%;
+    }
+
+    header {
+        pointer-events: none;
     }
 
 }
@@ -374,7 +369,6 @@ h1 {
         padding: 0rem 2rem 0 10vw;
         position: absolute;
         background-image: none;
-        background-color: var(--c06);
         transition: height 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     } #video_ctnr:hover {
         height: 65vh;
